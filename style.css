@@ -166,7 +166,7 @@ button {
     position: absolute;
     top: 30px;
     right: 10px;
-    color: lightgray;
+    color: gray;
 }
 
 .container form .customer-input input:focus {
@@ -174,8 +174,48 @@ button {
     color: black;
 }
 
-.container form .customer-input input:focus + i{
-    color: gray;
+.container form .customer-input input:user-invalid {
+    background-color: pink;
+    border-color: red;
+    color: darkred;
+}
+
+.container form .customer-input input:focus:user-invalid {
+    background-color: transparent;
+    border-color: red;
+    color: black;
+}
+
+.container form .customer-input input:valid {
+    background-color: lightgreen;
+    border-color: green;
+    color: darkgreen;
+}
+
+.container form .customer-input input:focus:valid {
+    background-color: transparent;
+    border-color: green;
+    color: black;
+}
+
+.container form .customer-input input:focus + i {
+    color: black;
+}
+
+.container form .customer-input input:user-invalid + i {
+    color: red;
+}
+
+.container form .customer-input input:focus:user-invalid + i {
+    color: black;
+}
+
+.container form .customer-input input:valid + i {
+    color: green;
+}
+
+.container form .customer-input input:focus:valid + i {
+    color: black;
 }
 
 .container form .signup {
@@ -190,6 +230,10 @@ button {
     background-color: skyblue;
     color: white;
     
+}
+
+.container form .signup:hover {
+    background-color: lightskyblue;
 }
 
 .container form .links {
